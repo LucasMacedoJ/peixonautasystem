@@ -17,4 +17,4 @@ listas.o: $(SRC)listas.c $(INCLUDE)listas.h
 	@$(GCC) -c $(SRC)listas.c -o $(OBJ)listas.o
 
 remover:
-	$(LIMPAR) * $(OBJ)
+	$(LIMPAR) $(OBJ)*
