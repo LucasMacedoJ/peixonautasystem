@@ -1,4 +1,5 @@
 #include "../include/utils.h"
+#include "../include/conf.h"
 #include <string.h>
 #include <ctype.h>
 
@@ -14,4 +15,12 @@ void formatar_maiuscula(char *str){
 
 void retirar_enter(char *str){
     *(str+(strlen(str))-1) = '\0';
+}
+
+char *mostrar_status(cliente_t cliente){
+    if(cliente.status == true)
+        return STATUS_ATIVO;
+
+    return STATUS_INATIVO;
+    
 }
